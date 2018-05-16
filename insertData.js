@@ -12,7 +12,7 @@ const options = {
 };
 mongoose.connect(config.database, options); // connect to database
 var data = [{
-        "id": "249942",
+        "id": 249942,
         "name": "Hotel Stefanos",
         "stars": 3,
         "price": 994.18,
@@ -26,7 +26,7 @@ var data = [{
         ]
     },
     {
-        "id": "161901",
+        "id": 161901,
         "name": "Hotel Santa Cruz",
         "stars": 3,
         "price": 1267.57,
@@ -40,7 +40,7 @@ var data = [{
         ]
     },
     {
-        "id": "161914",
+        "id": 161914,
         "name": "NM Lima Hotel",
         "stars": 4,
         "price": 1445.5,
@@ -54,7 +54,7 @@ var data = [{
         ]
     },
     {
-        "id": "208599",
+        "id": 208599,
         "name": "El Golf Hotel Boutique",
         "stars": 4,
         "price": 1513.45,
@@ -68,7 +68,7 @@ var data = [{
         ]
     },
     {
-        "id": "236309",
+        "id": 236309,
         "name": "Casa Andina Select Miraflores",
         "stars": 4,
         "price": 1545.46,
@@ -82,7 +82,7 @@ var data = [{
         ]
     },
     {
-        "id": "161899",
+        "id": 161899,
         "name": "Radisson Hotel Decapolis Miraflores",
         "stars": 4,
         "price": 2314.61,
@@ -96,7 +96,7 @@ var data = [{
         ]
     },
     {
-        "id": "104074",
+        "id": 104074,
         "name": "Antigua Miraflores Hotel",
         "stars": 3,
         "price": 1862.16,
@@ -110,7 +110,7 @@ var data = [{
         ]
     },
     {
-        "id": "512559",
+        "id": 512559,
         "name": "Casa Falleri Boutique Hotel",
         "stars": 3,
         "price": 1634.03,
@@ -124,7 +124,7 @@ var data = [{
         ]
     },
     {
-        "id": "228165",
+        "id": 228165,
         "name": "Habitat Hotel",
         "stars": 3,
         "price": 1061.79,
@@ -138,7 +138,7 @@ var data = [{
         ]
     },
     {
-        "id": "137536",
+        "id": 137536,
         "name": "Hotel San Blas",
         "stars": 3,
         "price": 1106.56,
@@ -152,7 +152,7 @@ var data = [{
         ]
     },
     {
-        "id": "266879",
+        "id": 266879,
         "name": "Palmetto Hotel Business San Borja",
         "stars": 3,
         "price": 1105.87,
@@ -166,7 +166,7 @@ var data = [{
         ]
     },
     {
-        "id": "19325",
+        "id": 19325,
         "name": "Foresta Hotel Lima",
         "stars": 4,
         "price": 1941.99,
@@ -180,7 +180,7 @@ var data = [{
         ]
     },
     {
-        "id": "427467",
+        "id": 427467,
         "name": "Royal Inca Hotel",
         "stars": 2,
         "price": 683.5,
@@ -194,7 +194,7 @@ var data = [{
         ]
     },
     {
-        "id": "277990",
+        "id": 277990,
         "name": "Bayview Hotel",
         "stars": 3,
         "price": 1043.88,
@@ -208,7 +208,7 @@ var data = [{
         ]
     },
     {
-        "id": "90757",
+        "id": 90757,
         "name": "Casa Andina Premium Miraflores",
         "stars": 4,
         "price": 1887.2,
@@ -222,7 +222,7 @@ var data = [{
         ]
     },
     {
-        "id": "161890",
+        "id": 161890,
         "name": "New Corpac Hotel",
         "stars": 3,
         "price": 886.12,
@@ -236,7 +236,7 @@ var data = [{
         ]
     },
     {
-        "id": "314944",
+        "id": 314944,
         "name": "Qorianka Hotel",
         "stars": 2,
         "price": 1024.91,
@@ -250,7 +250,7 @@ var data = [{
         ]
     },
     {
-        "id": "433932",
+        "id": 433932,
         "name": "Casa Suyay",
         "stars": 3,
         "price": 1695.37,
@@ -264,7 +264,7 @@ var data = [{
         ]
     },
     {
-        "id": "277988",
+        "id": 277988,
         "name": "Casa Bella Miraflores",
         "stars": 3,
         "price": 842.54,
@@ -278,7 +278,7 @@ var data = [{
         ]
     },
     {
-        "id": "455161",
+        "id": 455161,
         "name": "Tierra Viva Miraflores Larco",
         "stars": 3,
         "price": 1431.47,
@@ -292,7 +292,7 @@ var data = [{
         ]
     },
     {
-        "id": "260342",
+        "id": 260342,
         "name": "Atton San Isidro",
         "stars": 4,
         "price": 1943.69,
@@ -306,7 +306,7 @@ var data = [{
         ]
     },
     {
-        "id": "488116",
+        "id": 488116,
         "name": "Urbano Apartment Miraflores Pardo",
         "stars": 3,
         "price": 1258.4,
@@ -320,7 +320,7 @@ var data = [{
         ]
     },
     {
-        "id": "132929",
+        "id": 132929,
         "name": "Los Tallanes Hotel & Suites",
         "stars": 3,
         "price": 2014.68,
@@ -334,7 +334,7 @@ var data = [{
         ]
     },
     {
-        "id": "266875",
+        "id": 266875,
         "name": "Hotel Ferre Miraflores",
         "stars": 3,
         "price": 1183.19,
@@ -348,7 +348,7 @@ var data = [{
         ]
     },
     {
-        "id": "411416",
+        "id": 411416,
         "name": "Arawi Lima Miraflores",
         "stars": 4,
         "price": 2099.1,
@@ -362,7 +362,7 @@ var data = [{
         ]
     },
     {
-        "id": "266877",
+        "id": 266877,
         "name": "Peru Star Boutique Apartments Hotel",
         "stars": 4,
         "price": 1093.37,
@@ -376,7 +376,7 @@ var data = [{
         ]
     },
     {
-        "id": "106682",
+        "id": 106682,
         "name": "Del Pilar Miraflores Hotel",
         "stars": 3,
         "price": 1713.42,
@@ -390,7 +390,7 @@ var data = [{
         ]
     },
     {
-        "id": "266911",
+        "id": 266911,
         "name": "1900 Hostel",
         "stars": 1,
         "price": 596.7,
@@ -404,7 +404,7 @@ var data = [{
         ]
     },
     {
-        "id": "266878",
+        "id": 266878,
         "name": "Machu Picchu Suites",
         "stars": 3,
         "price": 794.74,
@@ -418,7 +418,7 @@ var data = [{
         ]
     },
     {
-        "id": "411417",
+        "id": 411417,
         "name": "Hotel Señorial",
         "stars": 3,
         "price": 1193.14,
@@ -432,7 +432,7 @@ var data = [{
         ]
     },
     {
-        "id": "266871",
+        "id": 266871,
         "name": "Las Palmas",
         "stars": 3,
         "price": 1118.45,
@@ -446,7 +446,7 @@ var data = [{
         ]
     },
     {
-        "id": "266872",
+        "id": 266872,
         "name": "Miraflores Lodge",
         "stars": 3,
         "price": 1090.91,
@@ -460,7 +460,7 @@ var data = [{
         ]
     },
     {
-        "id": "266873",
+        "id": 266873,
         "name": "Casa Wayra Bed & Breakfast Miraflores",
         "stars": 3,
         "price": 1175.85,
@@ -474,7 +474,7 @@ var data = [{
         ]
     },
     {
-        "id": "266874",
+        "id": 266874,
         "name": "HosteLima",
         "stars": 2,
         "price": 297.65,
@@ -488,7 +488,7 @@ var data = [{
         ]
     },
     {
-        "id": "266919",
+        "id": 266919,
         "name": "3B Barranco's Chic and Basic B&B",
         "stars": 3,
         "price": 1488.42,
@@ -502,7 +502,7 @@ var data = [{
         ]
     },
     {
-        "id": "162141",
+        "id": 162141,
         "name": "Hotel El Ducado",
         "stars": 3,
         "price": 1624.1,
@@ -516,7 +516,7 @@ var data = [{
         ]
     },
     {
-        "id": "266914",
+        "id": 266914,
         "name": "LYNIK La Casa de Blanca",
         "stars": 2,
         "price": 676.59,
@@ -530,7 +530,7 @@ var data = [{
         ]
     },
     {
-        "id": "26396",
+        "id": 26396,
         "name": "Country Club Lima Hotel",
         "stars": 5,
         "price": 3109.07,
@@ -544,7 +544,7 @@ var data = [{
         ]
     },
     {
-        "id": "88527",
+        "id": 88527,
         "name": "Hotel Libertador Lima",
         "stars": 4,
         "price": 1708.74,
@@ -558,7 +558,7 @@ var data = [{
         ]
     },
     {
-        "id": "450977",
+        "id": 450977,
         "name": "Los Girasoles",
         "stars": 3,
         "price": 1177.32,
@@ -572,7 +572,7 @@ var data = [{
         ]
     },
     {
-        "id": "35715",
+        "id": 35715,
         "name": "Melia Lima",
         "stars": 4,
         "price": 2099.3,
@@ -586,7 +586,7 @@ var data = [{
         ]
     },
     {
-        "id": "498515",
+        "id": 498515,
         "name": "Casa Aika",
         "stars": 3,
         "price": 757.58,
@@ -600,7 +600,7 @@ var data = [{
         ]
     },
     {
-        "id": "431154",
+        "id": 431154,
         "name": "Kingdom Hotel",
         "stars": 3,
         "price": 1754.36,
@@ -614,7 +614,7 @@ var data = [{
         ]
     },
     {
-        "id": "454496",
+        "id": 454496,
         "name": "Hotel Panamericano",
         "stars": 3,
         "price": 798.53,
@@ -628,7 +628,7 @@ var data = [{
         ]
     },
     {
-        "id": "266865",
+        "id": 266865,
         "name": "Condor's House - Hostel",
         "stars": 2,
         "price": 301.86,
@@ -642,7 +642,7 @@ var data = [{
         ]
     },
     {
-        "id": "266866",
+        "id": 266866,
         "name": "House Inn Backpacker",
         "stars": 2,
         "price": 280.8,
@@ -656,7 +656,7 @@ var data = [{
         ]
     },
     {
-        "id": "266900",
+        "id": 266900,
         "name": "La Casa Nostra Hostel",
         "stars": 2,
         "price": 1228.5,
@@ -670,7 +670,7 @@ var data = [{
         ]
     },
     {
-        "id": "266867",
+        "id": 266867,
         "name": "Hotel Kamana",
         "stars": 3,
         "price": 846.93,
@@ -684,7 +684,7 @@ var data = [{
         ]
     },
     {
-        "id": "91522",
+        "id": 91522,
         "name": "Embajadores Hotel",
         "stars": 3,
         "price": 1031.9,
@@ -698,7 +698,7 @@ var data = [{
         ]
     },
     {
-        "id": "266908",
+        "id": 266908,
         "name": "Sm Hotel And Business",
         "stars": 3,
         "price": 969.64,
@@ -712,7 +712,7 @@ var data = [{
         ]
     },
     {
-        "id": "157628",
+        "id": 157628,
         "name": "Fiesta Hotel & Casino",
         "stars": 4,
         "price": 2927.68,
@@ -726,7 +726,7 @@ var data = [{
         ]
     },
     {
-        "id": "266903",
+        "id": 266903,
         "name": "San Isidro Inn",
         "stars": 3,
         "price": 1053,
@@ -740,7 +740,7 @@ var data = [{
         ]
     },
     {
-        "id": "266904",
+        "id": 266904,
         "name": "Posada Peregrinus",
         "stars": 2,
         "price": 614.25,
@@ -754,7 +754,7 @@ var data = [{
         ]
     },
     {
-        "id": "413051",
+        "id": 413051,
         "name": "Courtyard Lima Miraflores",
         "stars": 4,
         "price": 2240.34,
@@ -768,7 +768,7 @@ var data = [{
         ]
     },
     {
-        "id": "76136",
+        "id": 76136,
         "name": "Hotel Estelar Miraflores",
         "stars": 4,
         "price": 1927.17,
@@ -782,7 +782,7 @@ var data = [{
         ]
     },
     {
-        "id": "76414",
+        "id": 76414,
         "name": "Swissôtel Lima",
         "stars": 5,
         "price": 3397.94,
@@ -796,7 +796,7 @@ var data = [{
         ]
     },
     {
-        "id": "473343",
+        "id": 473343,
         "name": "Luxury Hotel Inkari",
         "stars": 4,
         "price": 2049.84,
@@ -810,7 +810,7 @@ var data = [{
         ]
     },
     {
-        "id": "266870",
+        "id": 266870,
         "name": "La Paz Apart Hotel",
         "stars": 3,
         "price": 2535.14,
@@ -824,7 +824,7 @@ var data = [{
         ]
     },
     {
-        "id": "84153",
+        "id": 84153,
         "name": "Basadre Suites Boutique Hotel",
         "stars": 3,
         "price": 997.16,
@@ -838,7 +838,7 @@ var data = [{
         ]
     },
     {
-        "id": "187309",
+        "id": 187309,
         "name": "Hotel Melodia",
         "stars": 3,
         "price": 1053,
@@ -852,7 +852,7 @@ var data = [{
         ]
     },
     {
-        "id": "458601",
+        "id": 458601,
         "name": "Hotel Plaza Mayor",
         "stars": 2,
         "price": 469.94,
@@ -866,7 +866,7 @@ var data = [{
         ]
     },
     {
-        "id": "300212",
+        "id": 300212,
         "name": "Hotel Nobility",
         "stars": 3,
         "price": 1547.88,
@@ -880,7 +880,7 @@ var data = [{
         ]
     },
     {
-        "id": "187306",
+        "id": 187306,
         "name": "Casa Andina Standard Miraflores Centro",
         "stars": 3,
         "price": 1218.06,
@@ -894,7 +894,7 @@ var data = [{
         ]
     },
     {
-        "id": "432536",
+        "id": 432536,
         "name": "Wyndham Costa Del Sol Lima City",
         "stars": 4,
         "price": 1749.25,
@@ -908,7 +908,7 @@ var data = [{
         ]
     },
     {
-        "id": "27227",
+        "id": 27227,
         "name": "Sonesta Hotel El Olivar Lima",
         "stars": 4,
         "price": 2339.9,
@@ -922,7 +922,7 @@ var data = [{
         ]
     },
     {
-        "id": "532067",
+        "id": 532067,
         "name": "Thunderbird Hotels J.Pardo",
         "stars": 3,
         "price": 2237.4,
@@ -936,7 +936,7 @@ var data = [{
         ]
     },
     {
-        "id": "91274",
+        "id": 91274,
         "name": "La Hacienda Hotel Miraflores",
         "stars": 3,
         "price": 2071.2,
@@ -950,7 +950,7 @@ var data = [{
         ]
     },
     {
-        "id": "296187",
+        "id": 296187,
         "name": "El Angolo Lima",
         "stars": 3,
         "price": 1864.08,
@@ -964,7 +964,7 @@ var data = [{
         ]
     },
     {
-        "id": "161918",
+        "id": 161918,
         "name": "Hostal Porta",
         "stars": 3,
         "price": 629.8,
@@ -978,7 +978,7 @@ var data = [{
         ]
     },
     {
-        "id": "227172",
+        "id": 227172,
         "name": "Hotel Novotel Lima",
         "stars": 4,
         "price": 2091.07,
@@ -992,7 +992,7 @@ var data = [{
         ]
     },
     {
-        "id": "277989",
+        "id": 277989,
         "name": "ibis Larco Miraflores",
         "stars": 3,
         "price": 1156.91,
@@ -1006,7 +1006,7 @@ var data = [{
         ]
     },
     {
-        "id": "234536",
+        "id": 234536,
         "name": "Miraflores Suites Centro",
         "stars": 3,
         "price": 841.45,
@@ -1020,7 +1020,7 @@ var data = [{
         ]
     },
     {
-        "id": "161900",
+        "id": 161900,
         "name": "Radisson Hotel San Isidro",
         "stars": 4,
         "price": 1761.4,
@@ -1034,7 +1034,7 @@ var data = [{
         ]
     },
     {
-        "id": "433213",
+        "id": 433213,
         "name": "Hotel Boutique Huaca Wasi",
         "stars": 3,
         "price": 1715.28,
@@ -1048,7 +1048,7 @@ var data = [{
         ]
     },
     {
-        "id": "239304",
+        "id": 239304,
         "name": "Hotel Inka Path",
         "stars": 2,
         "price": 1088.1,
@@ -1062,7 +1062,7 @@ var data = [{
         ]
     },
     {
-        "id": "109664",
+        "id": 109664,
         "name": "Plaza del Bosque Hotel",
         "stars": 4,
         "price": 1889.37,
@@ -1076,7 +1076,7 @@ var data = [{
         ]
     },
     {
-        "id": "111046",
+        "id": 111046,
         "name": "Suites Antique Apart Hotel",
         "stars": 3,
         "price": 1594.88,
@@ -1090,7 +1090,7 @@ var data = [{
         ]
     },
     {
-        "id": "110914",
+        "id": 110914,
         "name": "Royal Park Hotel",
         "stars": 4,
         "price": 3141.14,
@@ -1104,7 +1104,7 @@ var data = [{
         ]
     },
     {
-        "id": "500017",
+        "id": 500017,
         "name": "El Faro Inn",
         "stars": 3,
         "price": 855.22,
@@ -1118,7 +1118,7 @@ var data = [{
         ]
     },
     {
-        "id": "132928",
+        "id": 132928,
         "name": "Hotel San Agustin Riviera",
         "stars": 3,
         "price": 798.89,
@@ -1132,7 +1132,7 @@ var data = [{
         ]
     },
     {
-        "id": "410363",
+        "id": 410363,
         "name": "Palmetto San Miguel",
         "stars": 3,
         "price": 1057.15,
@@ -1146,7 +1146,7 @@ var data = [{
         ]
     },
     {
-        "id": "161908",
+        "id": 161908,
         "name": "BTH",
         "stars": 4,
         "price": 1822.71,
@@ -1160,7 +1160,7 @@ var data = [{
         ]
     },
     {
-        "id": "137782",
+        "id": 137782,
         "name": "Thunderbird Hotels Carrera",
         "stars": 3,
         "price": 1559.54,
@@ -1174,7 +1174,7 @@ var data = [{
         ]
     },
     {
-        "id": "161909",
+        "id": 161909,
         "name": "qp Hotels Lima",
         "stars": 3,
         "price": 1318.17,
@@ -1188,7 +1188,7 @@ var data = [{
         ]
     },
     {
-        "id": "161904",
+        "id": 161904,
         "name": "Sol de Oro Hotel & Suites",
         "stars": 4,
         "price": 1722.41,
@@ -1202,7 +1202,7 @@ var data = [{
         ]
     },
     {
-        "id": "139167",
+        "id": 139167,
         "name": "Hotel Park Suites",
         "stars": 2,
         "price": 1447.88,
@@ -1216,7 +1216,7 @@ var data = [{
         ]
     },
     {
-        "id": "511549",
+        "id": 511549,
         "name": "Inkawasi Hostel Boutique",
         "stars": 2,
         "price": 796.13,
@@ -1230,7 +1230,7 @@ var data = [{
         ]
     },
     {
-        "id": "110347",
+        "id": 110347,
         "name": "Roosevelt Hotel & Suites",
         "stars": 3,
         "price": 1710.01,
@@ -1244,7 +1244,7 @@ var data = [{
         ]
     },
     {
-        "id": "239178",
+        "id": 239178,
         "name": "The Westin Lima Hotel & Convention Center",
         "stars": 5,
         "price": 3268.52,
@@ -1258,7 +1258,7 @@ var data = [{
         ]
     },
     {
-        "id": "108545",
+        "id": 108545,
         "name": "Delfines Hotel & Convention Center",
         "stars": 4,
         "price": 3841.81,
@@ -1272,7 +1272,7 @@ var data = [{
         ]
     },
     {
-        "id": "72019",
+        "id": 72019,
         "name": "Belmond Miraflores Park",
         "stars": 5,
         "price": 9355.52,
@@ -1286,7 +1286,7 @@ var data = [{
         ]
     },
     {
-        "id": "433923",
+        "id": 433923,
         "name": "Atelier Hotel",
         "stars": 3,
         "price": 1512.97,
@@ -1300,7 +1300,7 @@ var data = [{
         ]
     },
     {
-        "id": "15102",
+        "id": 15102,
         "name": "Jose Antonio Lima",
         "stars": 4,
         "price": 1914.87,
@@ -1314,7 +1314,7 @@ var data = [{
         ]
     },
     {
-        "id": "93911",
+        "id": 93911,
         "name": "El Condado Miraflores Hotel & Suites",
         "stars": 3,
         "price": 1374.56,
@@ -1328,7 +1328,7 @@ var data = [{
         ]
     },
     {
-        "id": "132931",
+        "id": 132931,
         "name": "Suites del Bosque Hotel",
         "stars": 3,
         "price": 1647.73,
@@ -1342,7 +1342,7 @@ var data = [{
         ]
     },
     {
-        "id": "132930",
+        "id": 132930,
         "name": "Leon de Oro Inn & Suites",
         "stars": 3,
         "price": 1128,
@@ -1356,7 +1356,7 @@ var data = [{
         ]
     },
     {
-        "id": "161892",
+        "id": 161892,
         "name": "Sonesta Posadas del Inca Miraflores - Lima",
         "stars": 3,
         "price": 1485.63,
@@ -1370,7 +1370,7 @@ var data = [{
         ]
     },
     {
-        "id": "161891",
+        "id": 161891,
         "name": "B&B Tradiciones",
         "stars": 3,
         "price": 801.45,
@@ -1384,7 +1384,7 @@ var data = [{
         ]
     },
     {
-        "id": "132937",
+        "id": 132937,
         "name": "Maria Angola Hotel & Centro de Convenciones",
         "stars": 3,
         "price": 1131.76,
@@ -1398,7 +1398,7 @@ var data = [{
         ]
     },
     {
-        "id": "132936",
+        "id": 132936,
         "name": "Hotel Continental",
         "stars": 3,
         "price": 774.53,

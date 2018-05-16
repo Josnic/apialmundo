@@ -30,17 +30,20 @@ hotelController.readAll = function(req, res) {
 
 
 hotelController.readOne = function(req, res) {
-    Hotel.find(req.params.id, function(err, hotels) {
+
+    var objS = {
+        id: parseInt(req.params.id)
+    }
+
+    Hotel.find(objS, function(err, hotel) {
         if (err) {
             response(res, 202, { message: "No se pudo obtener los hoteles debido a un error. ".err });
         } else {
-            response(res, 200, hotels);
+            response(res, 200, hotel);
+
         }
     });
 }
-
-
-
 
 hotelController.update = function(req, res) {
     var _ = require('underscore-node');
@@ -49,11 +52,12 @@ hotelController.update = function(req, res) {
 
     var objUpdate = _.omit(obj, 'id');
 
-    Hotel.findByIdAndUpdate(4, objUpdate, function(err, hotel) {
+    Hotel.findOneAndUpdate({ id: id }, objUpdate, function(err, hotel) {
+        console.log(err)
         if (err) {
             response(res, 202, { message: "No se pudo actualizar. ".err });
         } else {
-            response(res, 200, "OK", "Hotel actualizado con éxito.");
+            response(res, 200, { message: "Hotel actualizado con éxito." });
         }
     });
 }
@@ -61,11 +65,11 @@ hotelController.update = function(req, res) {
 
 hotelController.delete = function(req, res) {
     var id = parseInt(req.body.id);
-    Hotel.findByIdAndRemove(id, function(err) {
+    Hotel.findOneAndRemove({ id: id }, function(err) {
         if (err) {
             response(res, 202, { message: "No fue posible realizar la operación de eliminación. Error:  ".err });
         } else {
-            response(res, 200, "Hotel eliminado correctamente.");
+            response(res, 200, { message: "Hotel eliminado correctamente." });
         }
     })
 }

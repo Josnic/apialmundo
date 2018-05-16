@@ -14,7 +14,7 @@ const options = {
     bufferMaxEntries: 0
 };
 mongoose.connect(config.database, options); // connect to database
-app.set('superSecret', config.secret); // secret variable
+//app.set('superSecret', config.secret); // secret variable
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -60,17 +60,7 @@ app.use(function(req, res) {
     response(res, 404, { message: "La url solicitada no se encuentra." });
 });
 
-app.use(function(err, req, res, next) {
-    console.log(err)
-    if (err.name === 'JsonSchemaValidationError') {
-        // Log the error however you please 
-        console.log(err.message);
-        response(res, 400, { message: err.message });
-    } else {
-        response(res, 500, { message: "Internal Server Error. " + err.name });
-        console.log(err.stack)
-    }
-});
+
 
 var port = process.env.PORT || 3000;
 server.listen(port, () => {

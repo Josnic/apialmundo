@@ -1,8 +1,8 @@
 var express = require('express');
+var app = express();
 var router = express.Router();
-var { Validator, ValidationError } = require('express-json-validator-middleware');
-var validator = new Validator({ allErrors: true });
-var validate = validator.validate;
+var config = require('../config/config');
+
 var cors = require('cors')
 var bodyParser = require("body-parser");
 var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
@@ -13,31 +13,7 @@ router.use(bodyParser.json());
 
 var hotelController = require("../controllers/hotelController.js");
 var response = require("../controllers/response");
-var StreetSchema = {
-    type: 'object',
-    required: ['id', 'name', 'stars', 'price', 'image', 'amenities'],
-    properties: {
-        id: {
-            type: 'number'
-        },
-        name: {
-            type: 'string'
-        },
-        stars: {
-            type: 'number'
-        },
-        price: {
-            type: 'number'
-        },
-        image: {
-            type: 'string'
-        },
-        amenities: {
-            type: 'array'
-        }
-    }
-}
-
+var User = require("../models/User");
 
 
 router.post('/authenticate', function(req, res) {
@@ -63,9 +39,9 @@ router.post('/authenticate', function(req, res) {
                 // if user is found and password is right
                 // create a token
                 var payload = {
-                    admin: user.name
+                    admin: req.body.name
                 }
-                var token = jwt.sign(payload, app.get('superSecret'), {
+                var token = jwt.sign(payload, config.secret, {
                     expiresIn: 86400 // expires in 24 hours
                 });
 
@@ -88,11 +64,9 @@ router.use(function(req, res, next) {
 
     // decode token
     if (token) {
-
-        // verifies secret and checks exp
-        jwt.verify(token, app.get('superSecret'), function(err, decoded) {
+        jwt.verify(token, config.secret, function(err, decoded) {
             if (err) {
-                // return res.json({ success: false, message: 'Fallo de autenticación del token.' });
+
                 return response(res, 401, { success: false, message: 'Fallo de autenticación del token.' })
             } else {
                 // if everything is good, save to request for use in other routes
@@ -106,24 +80,19 @@ router.use(function(req, res, next) {
         // if there is no token
         // return an error
         response(res, 403, {
-                success: false,
-                message: 'No se reibió token.'
-            })
-            /*
-            return res.status(403).send({
-                success: false,
-                message: 'No se reibió token.'
-            });
-            */
-
+            success: false,
+            message: 'No se reibió token.'
+        })
     }
 
 });
 
-router.post('/create', validate({ body: StreetSchema }), hotelController.create);
+router.post('/create', hotelController.create);
 router.get('/readAll', hotelController.readAll);
 router.get('/readOne/:id', hotelController.readOne);
-router.put('/update', validate({ body: StreetSchema }), hotelController.update);
+router.put('/update', hotelController.update);
 router.delete('/delete', hotelController.delete);
+
+
 
 module.exports = router;
