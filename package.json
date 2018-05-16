@@ -1,41 +1,45 @@
 {
-  "name": "restapi",
-  "version": "1.0.0",
-  "description": "Rest API usando Node JS, Express y Mongo DB usando autenticación tipo Web Token",
-  "main": "server.js",
-  "scripts": {
-    "test": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Josnic/apialmundo.git"
-  },
-  "keywords": [
-    "api",
-    "rest",
-    "web",
-    "token",
-    "node",
-    "js",
-    "express",
-    "mongo",
-    "db"
-  ],
-  "author": "Nicolas Herrera",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Josnic/apialmundo/issues"
-  },
-  "homepage": "https://github.com/Josnic/apialmundo#readme",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "express-json-validator-middleware": "^1.2.3",
-    "http": "0.0.0",
-    "jsonwebtoken": "^8.2.1",
-    "mongoose": "^5.1.1",
-    "mongoose-double": "0.0.1",
-    "underscore-node": "^0.1.2"
-  }
+    "name": "restapi",
+    "version": "1.0.0",
+    "description": "Rest API usando Node JS, Express y Mongo DB usando autenticación tipo Web Token",
+    "main": "server.js",
+    "scripts": {
+        "test": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Josnic/apialmundo.git"
+    },
+    "keywords": [
+        "api",
+        "rest",
+        "web",
+        "token",
+        "node",
+        "js",
+        "express",
+        "mongo",
+        "db"
+    ],
+    "author": "Nicolas Herrera",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Josnic/apialmundo/issues"
+    },
+    "homepage": "https://github.com/Josnic/apialmundo#readme",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.4",
+        "express": "^4.16.3",
+        "express-json-validator-middleware": "^1.2.3",
+        "http": "0.0.0",
+        "jsonwebtoken": "^8.2.1",
+        "mongoose": "^5.1.1",
+        "mongoose-double": "0.0.1",
+        "underscore-node": "^0.1.2"
+    },
+    "engines": {
+        "node": "6.11.1",
+        "npm": "3.10.10"
+    }
 }
