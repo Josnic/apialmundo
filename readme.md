@@ -14,4 +14,19 @@ La aplicación contiene los siguientes modulos:
 * `server.js`: Es el archivo `main` de la aplicación que integra todo lo mencionado anteriormente.
 * `insertUser.js`: Es un archivo adicional que permite crear usuarios en la colección `users`de la Base de Datos. 
 * `insertData`: Este archivo contiene la funcionalidad de la importación de los datos de los hoteles a la coleccion `hotel`.
+
+## EndPoints
+
+* `/readFront?stars=3&name=demo`: Este endpoint NO está dentro de la autenticación, sino es solo para consumo de la WebApp. Arroja los datos de los hoteles de acuerdo a 2 filtros:estrellas y nombre del hotel. Método `GET`.
+* `apiv1/authenticate`: Permite autenticarse con el usuario y contraseña y obtener un Token para enviarlo en las peticiones posteriores para consumir los endpoints protegidos. Se envia un cuerpo formato JSON con `{name:user,password:pass}`. Método `POST`.
+A continuación se enumeran los Endpoints protegidos:
+* `/apiv1/readAll`: Este endpoint trae todos los datos de los hoteles sin filtrar.
+* `/apiv1/readOne/:id/`: Permite traer la información de un hotel según su ID.Método `GET`.
+* `/apiv1/create`: permite crear un nuevo hotel. Se envia en la petición un cuerpo con toda la información del mismo. Método `POST`.
+* `/apiv1/update`: Actualiza la información de un hotel de acuerdo a su ID. El payload a enviar es el mismo de `/apiv1/create`. Método `PUT`.
+* `apiv1/delele`:Elimina un hotel enviando en el body de la petición: `{id:1}`. Método `DELETE`.
+Para los Endpoints protegidos se debe de enviar un header con el nombre `x-access-token`.
+
+
 Para ver en funcionamiento puede ir [aquí](https://frontalmundo.herokuapp.com/), que es la aplicación Fronted que consume el API cuyo endpoint no requiere autenticación.
+De igual forma, puede consultar el home del API [https://apialmundo.herokuapp.com/](https://apialmundo.herokuapp.com/)

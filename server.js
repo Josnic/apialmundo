@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', function(req, res) {
-    res.send('Hello! The API is at http://localhost:' + port + '/api');
+    res.send('Hola! El API está corriendo!');
 });
 
 app.get('/readFront', function(req, res) {

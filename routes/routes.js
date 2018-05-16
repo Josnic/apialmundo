@@ -81,7 +81,7 @@ router.use(function(req, res, next) {
         // return an error
         response(res, 403, {
             success: false,
-            message: 'No se reibió token.'
+            message: 'No se recibió token.'
         })
     }
 
